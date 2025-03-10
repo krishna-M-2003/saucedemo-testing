@@ -32,6 +32,7 @@ describe('cart tests', () => {
     //     await expect(page.locator('[data-test="remove-sauce-labs-backpack"]')).not.toBeVisible();
     //   };
 
+    
     test('should remove product from cart', async ({ page }) => {
         await expect(page.locator('[data-test="add-to-cart-sauce-labs-backpack"]')).toBeVisible();
         await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
